@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+    <div style="width: fit-content" class="container";>
+        <h1 class="mt-5">Calculator</h1>
+        <div class="calculator">
+            <input type="text" id="display" class="form-control">
+            <div class="btn-group mt-3">
+                <button class="btn btn-primary" onclick="appendToDisplay('7')">7</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('8')">8</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('9')">9</button>
+                <button class="btn btn-danger" onclick="performOperation('+')">+</button>
+            </div><br>
+            <div class="btn-group mt-2">
+                <button class="btn btn-primary" onclick="appendToDisplay('4')">4</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('5')">5</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('6')">6</button>
+                <button class="btn btn-danger" onclick="performOperation('-')">-</button>
+            </div><br>
+            <div class="btn-group mt-2">
+                <button class="btn btn-primary" onclick="appendToDisplay('1')">1</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('2')">2</button>
+                <button class="btn btn-primary" onclick="appendToDisplay('3')">3</button>
+                <button class="btn btn-danger" onclick="performOperation('*')">*</button>
+            </div><br>
+            <div class="btn-group mt-2">
+                <button class="btn btn-primary" onclick="appendToDisplay('0')">0</button>
+                <button class="btn btn-danger" onclick="clearDisplay()">C</button>
+                <button class="btn btn-success" onclick="calculateResult()">=</button>
+                <button class="btn btn-danger" onclick="performOperation('/')">/</button>
+            </div><br>
+            <div class="btn-group mt-3">
+                <button class="btn btn-info" onclick="memoryAdd()">M+</button>
+                <button class="btn btn-info" onclick="memorySubtract()">M-</button>
+                <button class="btn btn-warning" onclick="memoryClear()">MC</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
